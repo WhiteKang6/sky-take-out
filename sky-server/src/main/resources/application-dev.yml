@@ -7,7 +7,7 @@ sky:
     username: root
     password: root123
   alioss:
-    endpoint: oss-cn-hangzhou.aliyuncs.com
-    access-key-id: <your-access-key-key>
-    access-key-secret: <your-access-key-secret>
-    bucket-name: web-sky-take-kang
+    endpoint: yourEndpoint
+    access-key-id: yourAccessKeyId
+    access-key-secret: yourAccessKeySecret
+    bucket-name: yourBucketName
