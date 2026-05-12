@@ -7,7 +7,7 @@ sky:
     username: root
     password: root123
   alioss:
-    endpoint: your-endpoint.aliyuncs.com
+    endpoint: oss-cn-hangzhou.aliyuncs.com
     access-key-id: your-access-key-id
     access-key-secret: your-access-key-secret
     bucket-name: your-bucket-name
@@ -16,3 +16,6 @@ sky:
     port: 6379
     password:
     database: 10
+  wechat:
+    appid: your-appid
+    secret: your-secret

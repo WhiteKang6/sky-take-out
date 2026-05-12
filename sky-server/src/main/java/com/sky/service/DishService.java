@@ -51,4 +51,6 @@ public interface DishService {
      * @return
      */
     List<Dish> getByCategoryId(Long categoryId);
+
+    List<DishVO> listWithFlavor(Long categoryId);
 }
