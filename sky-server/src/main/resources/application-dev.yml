@@ -10,7 +10,7 @@ sky:
     endpoint: oss-cn-hangzhou.aliyuncs.com
     access-key-id: yourAccessKeyId
     access-key-secret: yourAccessKeySecret
-    bucket-name: yourBucketName
+    bucket-name: your
   redis:
     host: localhost
     port: 6379
@@ -18,4 +18,4 @@ sky:
     database: 10
   wechat:
     appid: yourAppId
-    secret: yourSecret
+    secret: yourAppSecret
