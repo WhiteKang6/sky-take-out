@@ -8,14 +8,14 @@ sky:
     password: root123
   alioss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
-    access-key-id: your-access-key-id
-    access-key-secret: your-access-key-secret
-    bucket-name: your-bucket-name
+    access-key-id: yourAccessKeyId
+    access-key-secret: yourAccessKeySecret
+    bucket-name: yourBucketName
   redis:
     host: localhost
     port: 6379
     password:
     database: 10
   wechat:
-    appid: your-appid
-    secret: your-secret
+    appid: yourAppId
+    secret: yourSecret
