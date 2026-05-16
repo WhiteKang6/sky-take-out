@@ -18,8 +18,8 @@ sky:
     database: 10
   wechat:
     appid: your
-    secret:  your
+    secret: your
   baidu:
-    ak:  your
+    ak: your
   shop:
     address: your
