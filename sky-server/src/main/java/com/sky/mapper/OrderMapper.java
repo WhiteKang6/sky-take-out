@@ -2,12 +2,14 @@ package com.sky.mapper;
 
 import com.github.pagehelper.Page;
 import com.sky.dto.OrdersPageQueryDTO;
+import com.sky.entity.OrderDetail;
 import com.sky.entity.Orders;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface OrderMapper {
@@ -62,4 +64,24 @@ public interface OrderMapper {
      */
     @Select("select * from orders where status=#{pendingPayment} and order_time<#{time}")
     List<Orders> getByStatusAndOrderTimeLT(Integer pendingPayment, LocalDateTime time);
+
+    /**
+     * 根据订单状态和下单时间查询订单总金额
+     * @param map
+     * @return
+     */
+    Double sumByMap(Map map);
+
+    /**
+     * 根据订单状态和下单时间查询订单数量
+     * @param map
+     * @return
+     */
+    Integer countByMap(Map map);
+
+    /**
+     * 统计销量Top10的菜品或套餐
+     * @return
+     */
+    List<OrderDetail> getSalesTop10Statistics(LocalDateTime beginTime, LocalDateTime endTime);
 }
